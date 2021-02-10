@@ -1,0 +1,126 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: var(--color-four);
+}
+
+#contact-title-name {
+    font-family: 'Offside', cursive;
+    color: #132019;
+    font-size: var(--font-size-six);
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.order-confirm {
+    font-family: 'Offside', cursive;
+    color: #132019;
+    margin-bottom: 5%;
+}
+
+.leave-page {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color-three);
+  font-size: var(--font-size-nine);
+  margin-top: 1rem;
+}
+
+.container.contact {  
+  max-width: 510px;
+  min-width: 280px;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  background-color: var(--color-six);
+  border-radius: .25rem;
+  box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.2),
+  -12px -12px 10px rgba(0, 0, 0, 0.2);
+}
+.row {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 1em;
+}
+.pull-right {
+  float: right; 
+}
+
+form {
+  max-width: 100%;
+  display: block;
+}
+ul .contact-form{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.contact-form li {
+    margin: 0 0 0.25em 0; 
+    clear: both;
+    display: inline-block;
+    width: 100%;
+}
+   
+.req {
+  color: var(--color-three); 
+}
+
+label {
+    display: block;
+    color: var(--color-four);
+    margin-bottom: 0;
+}
+
+label.choice {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+input {
+    margin: 0 0 0.5em 0;
+    border: 1px solid var(--color-two);
+    border-radius: .25rem;
+    padding: 6px 10px;
+    width: 100%;
+    color: var(--color-four);
+}
+
+textarea {
+    border: 1px solid var(--color-two);
+    border-radius: .25rem;
+    padding: 6px 10px;
+    width: 100%;
+    color: var(--color-four);
+}
+
+select.flavor {
+  margin-bottom: 1rem;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .container.contact {
+    margin-top: 15%;
+    margin-bottom: 5em;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  label {
+    width: 100%;
+    display: inline-block;
+    clear: both;
+  }
+  li, p {
+   width: 100%; 
+  }
+  select.flavor {
+      margin-bottom: 1em;
+  }
+  input.btn {
+   margin: 1.5em 0 0.5em; 
+  }
+}
+

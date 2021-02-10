@@ -1,0 +1,26 @@
+<% photoCoverClass = locals.small ? 'photo-cover-small' : '' %>
+<% photoGridClass = locals.small ? 'photo-grid-small' : '' %>
+<div class="photo-grid <%= photoGridClass %>">
+  <% photos.forEach(photo => { %>
+    <div class="card-group">
+      <div class="card card-photo">
+        <div class="card-img-top">
+          <a href="/photos/<%= photo.slug %>">
+            <img class="img-fluid photo-cover<%= photoCoverClass %>" src="<%= photo.coverImagePath %>">
+          </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title card-title-photo"><%= photo.title %></h5>
+        </div>
+        <div class="card-footer footer-btn-photo">
+          <a href="/photos/<%= photo.slug %>" class="btn btn-primary">See More</a>
+          <% if(currentUser){ %>
+            <a class="btn btn-primary btn-photo-view" href="/photos/<%= photo.id %>/edit">Edit</a>
+            <%- include('../partials/deleteForm',
+                        { url: `/photos/${photo.id}` }) %>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  <% }) %>
+</div>

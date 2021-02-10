@@ -1,0 +1,42 @@
+.bg-custom {
+    background: var(--color-background-one);
+    height: 9%;
+    max-width: 100vw;
+}
+
+.navbar-toggler-icon {
+    background-color: var(--color-three);
+}
+
+.navbar-toggle.collapsed {
+    background-color: var(--color-four) !important;
+}
+
+btn:focus, a:focus {
+         outline: none;
+}
+.navbar-toggler:focus {
+         outline: none !important;
+         box-shadow: none;
+}
+
+#navbarNav a.nav-link {
+    color: var(--color-three);
+    font-family: 'Offside', cursive;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+#navbarNav a.nav-link:hover {
+    color:var(--color-one);
+}
+
+@media only screen and (max-width: 992px) {
+    #navbarNav a.nav-link {
+        background-color: var(--color-background-one);
+        /* width: 100% */
+    }
+    .navbar {
+        padding: .5rem 0rem;
+    }
+} 

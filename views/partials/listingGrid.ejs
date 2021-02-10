@@ -1,0 +1,36 @@
+<% listingThumbClass = locals.small ? 'listing-thumb-small' : '' %>
+<% listingGridClass = locals.small ? 'listing-grid-small' : '' %>
+<div class="listing-grid <%= listingGridClass %>">
+  <% listings.forEach(listing => { %>
+    <div class="card-group">
+      <div class="card card-listing">
+        <div class="card-img-top">
+          <a href="/listings/<%= listing.slug %>">
+            <img class="img-fluid listing-thumb<%= listingThumbClass %>" src="<%= listing.thumbImagePath %>">
+          </a>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title card-title-listing"><%= listing.name %></h5>
+        </div>
+        <div class="card-footer footer-btn-listing">
+          <a href="/listings/<%= listing.slug %>" class="btn btn-primary">See More</a>
+          <% if(currentUser){ %>
+            <a class="btn btn-primary" href="/listings/<%= listing.id %>/edit">Edit</a>
+            <%- include('../partials/deleteForm',
+                        { url: `/listings/${listing.id}` }) %>
+          <% } %>
+        </div>
+      </div>
+    </div>
+    
+  <% }) %>
+</div>
+
+
+
+
+
+
+
+
+

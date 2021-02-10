@@ -1,0 +1,16 @@
+<%- include('../partials/head.ejs') %>
+<body class="listings">
+    <%- include('../partials/header.ejs') %>
+    <div class="inner-container">
+      <%- include('../partials/errorMessage.ejs') %>
+      <%- include('../partials/headerPhotos') %>
+      <h2 class="page-header text-center mb-5"><%= section.name %></h2>
+      <% if (listingsBySection.length > 0) { %>
+        <%- include('../partials/listingGrid', { listings: listingsBySection, small: true }) %>
+      <% } %>
+    </div>
+    <div>
+      <a class="btn btn-primary photo-details-listing-button" href="/listings">Back to Menu</a>
+     </div>
+
+<%- include('../partials/footer.ejs') %>

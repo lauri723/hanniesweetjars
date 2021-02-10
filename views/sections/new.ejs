@@ -1,0 +1,17 @@
+<%- include('../partials/head.ejs') %>
+<body class="sections">
+    <%- include('../partials/header.ejs') %>
+    <div class="inner-container">
+      <%- include('../partials/errorMessage.ejs') %>
+      <%- include('../partials/headerPhotos') %>
+      <h2 class="page-header text-center mb-5">New Flavor Type</h2>
+      <form action="/sections" method="POST">
+        <%- include('_form_fields') %>
+        <div class="form-row btn-section-new-edit btn-section-new btn-row">
+          <button class="btn btn-section-create btn-primary" type="submit">Create</button>
+          <a class="btn btn-section-cancel btn-danger" href="/sections">Cancel</a>
+        </div>
+      </form>
+    </div>
+
+<%- include('../partials/footer.ejs') %>

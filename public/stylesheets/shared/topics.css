@@ -1,0 +1,72 @@
+body.topics {
+  margin-bottom: 3em;
+}
+.topic-row {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .form-item-topic {
+    display: flex;
+    flex-direction: column;
+    margin: auto 2rem;
+    flex-grow: 1;
+    flex-basis: 0;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .topic-name {
+    font-size: 1.5rem;
+    color: var(--color-four);
+  }
+
+  .form-topic, .form-topic-search {
+    margin: auto;
+    width: 50%;
+  }
+  
+  .form-item-topic {
+    color: var(--color-four);
+  }
+
+  .btn-topic {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2em;
+  }
+  
+  .btn-topic-view {
+    margin-right: 1em;
+    margin-left: 1em;
+  }
+  
+  .btn-topic-create , .btn-topic-cancel {
+    margin-right: 2em;
+  }
+
+  .btn-topic-new-edit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+  
+  .btn-topic-search {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .form-item-topic {
+      width: 90%;
+    }
+    .form-topic, .form-topic-search {
+      width: 90%;
+      margin: auto;
+    }
+  }

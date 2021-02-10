@@ -1,0 +1,83 @@
+.section-index {
+  display: flex;
+  justify-content: center;
+}
+
+.card-section {
+  background-color: var(--color-six);
+  padding: 1rem;
+  box-shadow: 12px 12px 10px rgba(0, 0, 0, 0.2),
+    -12px -12px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  margin-top: .5rem;
+}
+
+.card-title-section, .card-title-show {
+  color:var(--color-four);
+}
+
+div.card-footer {
+  background-color: var(--color-six);
+  border: none;
+}
+
+.btn-show {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+
+.btn-section-new-edit {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em 0em 8em 0em;
+}
+
+.footer-btn-section {
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .card-show {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 795px) {
+  .header-nav ul {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .inner-container {
+    margin: 0rem;
+  }
+  :root {
+    --section-picture-width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .card-body-show {
+    padding: 0px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .card-section {
+    width: 17rem;
+    margin: auto;
+  } 
+}
+

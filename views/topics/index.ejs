@@ -1,0 +1,33 @@
+
+<%- include('../partials/head.ejs') %>
+<body class="topics">
+    <%- include('../partials/header.ejs') %>
+    <div class="inner-container">
+      <%- include('../partials/errorMessage.ejs') %>
+      <%- include('../partials/headerArticles') %>
+
+      <% topics.forEach(section => { %>
+        <div class="section-index">
+          <div class="card card-section mb-4" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="/sections/<%= section.slug %>" class="btn btn-primary"><%= section.name %></a>
+              </li>
+              <% if(currentUser){ %>
+              <li class="list-group-item">
+                <a class="btn btn-primary" href="/sections/<%= section.id %>/edit">Edit</a>
+              </li>
+              <li class="list-group-item">
+                <%- include('../partials/deleteForm',
+                { url: `/sections/${section.id}` }) %>
+              </li>
+              <% } %> 
+            </ul>
+          </div> 
+        </div>            
+      <% }) %>
+
+    </div>
+
+<%- include('../partials/footer.ejs') %>
+

@@ -1,0 +1,30 @@
+<%- include('../partials/head.ejs') %>
+<body class="listings">
+    <%- include('../partials/header.ejs') %>
+    <div class="inner-container">
+      <%- include('../partials/errorMessage.ejs') %>
+      <%- include('../partials/headerPhotos') %>
+      
+      <div class="card card-listing-show">
+        <div class="card-body card-body-listing">
+          <h2 class="card-title card-title-listing"><%= listing.name %></h2>
+          <h4 class="card-subtitle mb-2 text-muted card-subtitle-listing"><%= listing.description %></h4>
+          <p class="card-text card-text-listing"><%- listing.sanitizedHtml %></p>
+          <p class="card-text card-text-listing">Ingredients:  <%= listing.materials %></p>
+          <h5 class="card-text card-text-listing mb-4">$<%= listing.price.toLocaleString() %> each, <span class="or">or</span> $<%= listing.pricePer.toLocaleString() %> when you buy <%= listing.pricePerQty %></h5>
+          <a class="btn btn-primary" href="/contact" target="_blank">Contact & Order</a>  
+          <!-- <a class="btn btn-primary" href="<%= listing.url %>">Purchase on Etsy</a> -->
+          <p class="card-text card-text-listing text-muted mt-3">#<%= listing.tags %></p>
+        </div>
+      </div>
+      
+      <% if (photosByListing.length > 0) { %>
+        <%- include('../partials/photoGrid', { photos: photosByListing, small: true }) %>
+      <% } %>
+
+      <div>
+        <a class="btn btn-primary btn-listing photo-details-listing-button" href="/listings ">Back to Menu</a>
+      </div>
+    </div>
+
+<%- include('../partials/footer.ejs') %>

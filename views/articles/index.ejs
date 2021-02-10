@@ -1,0 +1,20 @@
+<%- include('../partials/head.ejs') %>
+<body class="articles">
+      <%- include('../partials/header.ejs') %>
+      <div class="inner-container">
+        <%- include('../partials/errorMessage.ejs') %>
+        <%- include('../partials/headerArticles') %>
+
+        <div class="topic-buttons">
+          <% topics.forEach(topic => { %>              
+            <a href="/topics/<%= topic.slug %>" class="btn btn-primary"><%= topic.name %></a>     
+          <% }) %>
+         </div>
+
+        <%- include('../partials/articleGrid', { articles: articles }) %>
+      </div>
+
+    <%- include('../partials/footer.ejs') %>
+
+
+  

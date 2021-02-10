@@ -1,0 +1,31 @@
+
+  <div class="form-item form-item-photo">
+    <label>Flavor</label>
+    <select name="listing" style="color: var(--color-three);">
+      <% listings.forEach(listing => { %>
+        <% if (listing.id === photo.listing) { %>
+          <option selected label="<%= listing.name %>" value="<%= listing.id %>">
+        <% } else { %>
+          <option label="<%= listing.name %>" value="<%= listing.id %>">
+        <% } %>
+      <% }) %>
+    </select>
+  </div>
+  <div class="form-item form-item-photo">
+    <label>Title</label>
+    <input type="text" name="title" value="<%= photo.title %>">
+  </div>
+
+<div>
+  <div class="form-item form-item-photo">
+    <label>Description</label>
+    <textarea name="description"><%= photo.description %></textarea>
+  </div>
+</div>
+
+<div class="form-row form-row-filepond">
+  <div class="form-item form-item-no-grow">
+    <label>Photo</label>
+    <input type="file" name="cover" class="photo-cover filepond">
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<%- include('../partials/head.ejs') %>
+<body class="topics">
+    <%- include('../partials/header.ejs') %>
+    <div class="inner-container">
+      <%- include('../partials/errorMessage.ejs') %>
+      <%- include('../partials/headerArticles') %>
+
+      <h2 class="page-header text-center mb-5">Topic:  <%= topic.name %></h2>
+
+      <% if (articlesByTopic.length > 0) { %>
+        <%- include('../partials/articleGrid', { articles: articlesByTopic }) %>
+      <% } %>
+    </div>
+
+<%- include('../partials/footer.ejs') %>

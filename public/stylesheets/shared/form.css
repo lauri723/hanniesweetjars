@@ -1,0 +1,67 @@
+.form-item-photo, .form-item-listing, .form-item-article, .form-item-section, .form-item-topic  {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 0;
+  width: 50%;
+  margin: auto;
+}
+
+.form-item-no-grow {
+  flex-grow: 0;
+}
+
+.form-row-filepond {
+  display: flex;
+  justify-content: center;
+}
+
+.form-item > label {
+  color:  var(--color-four);
+  font-size: 1.4em;
+  /* margin-bottom: .25rem; */
+  margin-left: .25rem;
+}
+
+.form-item input, .form-item select, .form-item textarea {
+  padding: .25rem;
+  border: 1px solid var(--color-two);
+  border-radius: .25rem;
+  background-color: var(--color-six);
+  color: var(--color-four);
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-family: 'Dosis', sans-serif;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+.form-item input, .form-item select {
+  height: 2.75rem;
+}
+
+.filepond--root {
+  font-family: 'Dosis', sans-serif;
+  margin-bottom: 0;
+  border: 1px solid var(--color-two);
+  border-radius: .25rem;
+}
+
+.filepond--panel-root {
+  background-color: var(--color-six);
+}
+
+.filepond--drop-label {
+  color: var(--color-three);
+  font-size: inherit;
+}
+
+@media only screen and (max-width: 1024px) {
+  .form-item-photo, .form-item-listing, .form-item-section, .form-item-article {
+    width: 90%;
+  }
+  .form-row-filepond {
+    width: 90%;
+    margin: auto;
+  }
+}

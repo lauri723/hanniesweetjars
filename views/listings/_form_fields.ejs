@@ -1,0 +1,58 @@
+
+  
+  <div class="form-item form-item-listing">
+    <label>Variety</label>
+    <select name="section" style="color: var(--color-three);">
+      <% sections.forEach(section => { %>
+        <% if (section.id === listing.section) { %>
+          <option selected label="<%= section.name %>" value="<%= section.id %>">
+        <% } else { %>
+          <option label="<%= section.name %>" value="<%= section.id %>">
+        <% } %>
+      <% }) %>
+    </select>
+  </div>
+  <!-- <div class="form-item form-item-listing">
+    <label>Etsy Listing URL</label>
+    <input type="text" name="url" value="<%= listing.url %>" placeholder="https://<EtsyListing>">
+  </div> -->
+  <div class="form-item form-item-listing">
+    <label>Name</label>
+    <input type="text" name="name" value="<%= listing.name %>">
+  </div>
+  <div>
+    <div class="form-item form-item-listing">
+      <label>Sub-Title</label>
+      <textarea name="description"><%= listing.description %></textarea>
+    </div>
+  </div>
+  <div class="form-item form-item-article">
+    <label for="markdown">Description</label>
+    <textarea required name="markdown" id="markdown" rows="4" ><%= listing.markdown %></textarea>
+  </div>
+  <div class="form-item form-item-listing">
+    <label>Ingredients</label>
+    <input type="text" name="materials" value="<%= listing.materials %>">
+  </div>
+  <div class="form-item form-item-listing">
+    <label>Price</label>
+    <input type="text" name="price" value="<%= listing.price %>" placeholder="No $ or commas">
+  </div>
+  <div class="form-item form-item-listing">
+    <label>Price per Qty</label>
+    <input type="text" name="pricePer" value="<%= listing.pricePer %>" placeholder="No $ or commas">
+  </div>
+  <div class="form-item form-item-listing">
+    <label>Qty for Price per Qty</label>
+    <input type="text" name="pricePerQty" value="<%= listing.pricePerQty %>">
+  </div>
+  <div class="form-item form-item-listing">
+    <label>Tags</label>
+    <input type="text" name="tags" value="<%= listing.tags %>" placeholder="Type with space between tags">
+  </div>
+  <div class="form-row form-row-filepond">
+    <div class="form-item form-item-no-grow">
+      <label>Thumbnail</label>
+      <input type="file" name="thumb" class="listing-thumb filepond">
+    </div>
+  </div>

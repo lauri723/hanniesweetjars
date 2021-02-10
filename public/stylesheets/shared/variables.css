@@ -1,0 +1,35 @@
+:root {
+  --color-background-one: #fce1e1;
+  --color-background-two: #fef6f6;
+  /* --color-background-three: #fff2e6;
+  --color-background-four: #ffd7b3; */
+  /* home-name/nav/header/buttons */
+  --color-one: #2a655c;
+  --color-two: #173630;
+  /* form-text/markdown-text/messages/buttons */
+  --color-three: #c95165;
+  /* labels/hovers */
+  --color-four: #433a6b;
+  /* --color-four: #030330; */
+  /* input-background/navbar/hover */
+  --color-five: #f5ede1;
+  /* card-background/hover/text-shadow */
+  --color-six: #faf8f5;
+            
+  --font-size-one: 3em;
+  --font-size-two: 2.0em;
+  --font-size-three: 2.4em;
+  --font-size-four: 1.4em;
+  --font-size-five: 2.0em;
+  --font-size-six: 1.8em;
+  --font-size-seven: 1.6em;
+  --font-size-eight: 1.2em;
+  --font-size-nine: 1em;
+  --font-size-ten: .8em;
+  --font-size-eleven: 1.3em;
+
+}
+
+
+
+  
