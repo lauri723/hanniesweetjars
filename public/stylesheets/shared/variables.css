@@ -1,8 +1,6 @@
 :root {
   --color-background-one: #fce1e1;
   --color-background-two: #fef6f6;
-  /* --color-background-three: #fff2e6;
-  --color-background-four: #ffd7b3; */
   /* home-name/nav/header/buttons */
   --color-one: #2a655c;
   --color-two: #173630;
@@ -10,7 +8,6 @@
   --color-three: #c95165;
   /* labels/hovers */
   --color-four: #433a6b;
-  /* --color-four: #030330; */
   /* input-background/navbar/hover */
   --color-five: #f5ede1;
   /* card-background/hover/text-shadow */

@@ -27,7 +27,7 @@
   padding: .25rem;
   border: 1px solid var(--color-two);
   border-radius: .25rem;
-  background-color: var(--color-six);
+  background-color: #fff;
   color: var(--color-four);
   font-size: 1.2rem;
   font-weight: normal;
@@ -48,7 +48,8 @@
 }
 
 .filepond--panel-root {
-  background-color: var(--color-six);
+  background-color: #fff;
+  /* background-color: var(--color-six); */
 }
 
 .filepond--drop-label {

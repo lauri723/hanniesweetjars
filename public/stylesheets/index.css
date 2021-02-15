@@ -22,16 +22,16 @@
 
 .home ul li {
     list-style: none;
+    color: var(--color-three);
 }
 
 .home ul li::before {
     content: url(/images/heart.png);
-    color: var(--color-three);
 }
 
 footer {
     color: var(--color-four);
-    background: linear-gradient(to right, var(--color-background-one), var(--color-background-two));
+    background: linear-gradient(to right, var(--color-background-one), var(--color-background-two), #fff);
     width: 100vw;
     position: fixed;
     bottom: 0;
@@ -50,7 +50,6 @@ footer a:hover {
 
 footer .fas, .fab {
     font-size: var(--font-size-three);
-    padding-bottom: 10px;
     align-items: flex-start;
     color: var(--color-one);
     text-shadow: 2px 2px var(--color-two);
@@ -93,7 +92,6 @@ footer .fas:hover, .fab:hover {
      }
 
      footer .fas, .fab {
-         /* font-size: var(--font-size-five); */
          padding-bottom: 0px;
          text-shadow: 1px 1px var(--color-two);
      }

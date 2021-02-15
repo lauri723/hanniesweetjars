@@ -18,22 +18,23 @@
 }
 
 .btn-primary {
-  /* color: var(--color-four); */
-  color: var(--color-five);
-  background-color: var(--color-one);
+  color: var(--color-one);
+  background-color: #fff;
+  border: 2px solid var(--color-one);
 }
 
 .btn-primary:hover {
   color: var(--color-three);
-  background-color: var(--color-five);
+  background-color: #fff;
+  border: 2px solid var(--color-three);
 }
 
 .btn-danger {
-  color: var(--color-five);
+  color: #fff;
   background-color: var(--color-three);
 }
 
 .btn-danger:hover {
   color: var(--color-three);
-  background-color: var(--color-five);
+  background-color: #fff;
 }
